@@ -1,0 +1,298 @@
+[D][06912.792048] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.cpu'
+[D][06912.792074] spa.cpu      | [           cpu.c:  262 impl_init()] 0x55bec82c3478: count:24 align:32 flags:0007cbdb
+[I][06912.792081] pw.context   | [      pipewire.c:  578 pw_init()] version 1.3.0
+[D][06912.792087] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.system'
+[D][06912.792091] spa.system   | [        system.c:  334 impl_init()] 0x55bec82c3928: initialized
+[D][06912.792095] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.loop'
+[D][06912.792100] spa.system   | [        system.c:   96 impl_pollfd_create()] 0x55bec82c3928: new fd:5
+[D][06912.792104] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82c3928: new fd:6
+[D][06912.792108] spa.loop     | [          loop.c: 1204 impl_init()] 0x55bec82c3b48: initialized
+[D][06912.792114] pw.main-loop | [     main-loop.c:   46 loop_new()] 0x55bec82c37d0: new 'main-loop'
+[D][06912.792118] spa.system   | [        system.c:  237 impl_signalfd_create()] 0x55bec82c3928: new fd:7
+[D][06912.792122] spa.system   | [        system.c:  237 impl_signalfd_create()] 0x55bec82c3928: new fd:8
+[D][06912.792128] pw.context   | [       context.c:  331 pw_context_new()] 0x55bec82c3ed0: new
+[I][06912.792230] pw.conf      | [          conf.c:  415 conf_load()] 0x55bec82c59a0: loaded config '/data/hoangnguyen15/AGL/pipewire/builddir/src/daemon/pipewire-pulse.conf' with 9 items
+[I][06912.792252] pw.conf      | [          conf.c: 1110 pw_conf_section_for_each()] handle config '/data/hoangnguyen15/AGL/pipewire/builddir/src/daemon/pipewire-pulse.conf' section 'context.properties'
+[I][06912.792258] pw.context   | [       context.c:  388 pw_context_new()] 0x55bec82c3ed0: parsed 0 context.properties items
+[D][06912.792272] pw.data-loop | [     data-loop.c:  100 loop_new()] 0x55bec82c9a60: new
+[D][06912.792276] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.system'
+[D][06912.792280] spa.system   | [        system.c:  334 impl_init()] 0x55bec82c9b68: initialized
+[D][06912.792283] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.loop'
+[D][06912.792287] spa.system   | [        system.c:   96 impl_pollfd_create()] 0x55bec82c9b68: new fd:9
+[D][06912.792291] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82c9b68: new fd:10
+[D][06912.792295] spa.loop     | [          loop.c: 1204 impl_init()] 0x55bec82c9c88: initialized
+[I][06912.792300] pw.context   | [       context.c:  269 setup_data_loops()] created data loop 'data-loop.0'
+[I][06912.792303] pw.context   | [       context.c:  272 setup_data_loops()] created 1 data-loops
+[D][06912.792307] pw.mem       | [           mem.c:  169 pw_mempool_new()] 0x55bec82c9ef0: new
+[D][06912.792311] pw.work-queue | [    work-queue.c:   88 pw_work_queue_new()] 0x55bec82c9f50: new
+[D][06912.792315] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82c3928: new fd:11
+[D][06912.792320] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-dbus' factory-name:'support.dbus'
+[D][06912.792378] pw.context   | [      pipewire.c:  129 open_plugin()] loaded plugin:'/data/hoangnguyen15/AGL/pipewire/builddir/spa/plugins/support/libspa-dbus.so'
+[D][06912.792384] spa.dbus     | [          dbus.c:  522 impl_init()] 0x55bec82c9988: initialized
+[D][06912.792405] pw.core      | [     impl-core.c:  424 pw_context_create_core()] 0x55bec82cb090: new pipewire-hoangnguyen15-163108
+[D][06912.792411] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82cb230: new PipeWire:Interface:Core 0
+[D][06912.792416] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82cb230: registered 0
+[I][06912.792421] pw.conf      | [          conf.c: 1110 pw_conf_section_for_each()] handle config '/data/hoangnguyen15/AGL/pipewire/builddir/src/daemon/pipewire-pulse.conf' section 'context.spa-libs'
+[D][06912.792439] pw.context   | [       context.c: 1910 pw_context_add_spa_lib()] 0x55bec82c3ed0: map factory regex 'audio.convert.*' to 'audioconvert/libspa-audioconvert
+[D][06912.792446] pw.context   | [       context.c: 1910 pw_context_add_spa_lib()] 0x55bec82c3ed0: map factory regex 'support.*' to 'support/libspa-support
+[I][06912.792450] pw.context   | [       context.c:  481 pw_context_new()] 0x55bec82c3ed0: parsed 2 context.spa-libs items
+[I][06912.792454] pw.conf      | [          conf.c: 1110 pw_conf_section_for_each()] handle config '/data/hoangnguyen15/AGL/pipewire/builddir/src/daemon/pipewire-pulse.conf' section 'context.modules'
+[I][06912.792459] pw.module    | [   impl-module.c:  156 pw_context_load_module()] 0x55bec82c3ed0: name:libpipewire-module-rt args:{
+            nice.level   = -11
+            #rt.prio      = 83
+            #rt.time.soft = -1
+            #rt.time.hard = -1
+            #uclamp.min = 0
+            #uclamp.max = 1024
+        }
+[D][06912.792464] pw.module    | [   impl-module.c:  164 pw_context_load_module()] PIPEWIRE_MODULE_DIR set to: /data/hoangnguyen15/AGL/pipewire/builddir/src/modules
+[D][06912.792469] pw.module    | [   impl-module.c:  171 pw_context_load_module()] trying to load module: libpipewire-module-rt (/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-rt.so) args({
+            nice.level   = -11
+            #rt.prio      = 83
+            #rt.time.soft = -1
+            #rt.time.hard = -1
+            #uclamp.min = 0
+            #uclamp.max = 1024
+        })
+[D][06912.792499] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82ce610: new PipeWire:Interface:Module 1
+[D][06912.792504] mod.rt       | [     module-rt.c: 1072 pipewire__module_init()] module 0x55bec82ce890: new
+[I][06912.792511] mod.rt       | [     module-rt.c:  566 check_realtime_privileges()] setrlimit() failed: Operation not permitted
+[I][06912.792545] mod.rt       | [     module-rt.c:  572 check_realtime_privileges()] failed to set realtime policy: Operation not permitted
+[I][06912.792549] mod.rt       | [     module-rt.c:  537 check_realtime_privileges()] Clamp rtprio 83 to 0
+[I][06912.792552] mod.rt       | [     module-rt.c:  545 check_realtime_privileges()] Priority max (0) must be at least 11
+[I][06912.792555] mod.rt       | [     module-rt.c:  581 check_realtime_privileges()] can't set rt prio to 83 (try increasing rlimits)
+[D][06912.792559] mod.rt       | [     module-rt.c:  930 rtkit_get_bus()] enter rtkit get bus
+[I][06912.792776] mod.rt       | [     module-rt.c:  301 pw_rtkit_check_xdg_portal()] Can't find org.freedesktop.portal.Desktop. Is xdg-desktop-portal running?
+[I][06912.792788] mod.rt       | [     module-rt.c:  944 rtkit_get_bus()] found session bus but no portal, trying RTKit fallback
+[D][06912.793207] pw.thread-loop | [   thread-loop.c:  145 loop_new()] 0x55bec82d2b10: new name:module-rt
+[D][06912.793215] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.system'
+[D][06912.793221] spa.system   | [        system.c:  334 impl_init()] 0x55bec82d2d18: initialized
+[D][06912.793224] pw.context   | [      pipewire.c:  235 load_spa_handle()] load lib:'support/libspa-support' factory-name:'support.loop'
+[D][06912.793229] spa.system   | [        system.c:   96 impl_pollfd_create()] 0x55bec82d2d18: new fd:13
+[D][06912.793234] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82d2d18: new fd:14
+[D][06912.793238] spa.loop     | [          loop.c: 1204 impl_init()] 0x55bec82d43d8: initialized
+[D][06912.793244] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82d2d18: new fd:15
+[D][06912.793279] pw.thread-loop | [   thread-loop.c:  287 do_loop()] 0x55bec82d2b10: enter thread
+[D][06912.793311] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82d2d18: new fd:16
+[I][06912.793316] spa.loop     | [          loop.c:  215 loop_create_queue()] 0x55bec82d43d8 created queue 0x55bec82d4730
+[D][06912.793323] mod.rt       | [     module-rt.c: 1162 pipewire__module_init()] initialized using RTKit
+[D][06912.793325] mod.rt       | [     module-rt.c:  977 do_rtkit_setup()] enter rtkit setup
+[D][06912.793328] pw.module    | [   impl-module.c:  358 pw_impl_module_update_properties()] 0x55bec82ce330: updated 4 properties
+[D][06912.793333] pw.module    | [   impl-module.c:  358 pw_impl_module_update_properties()] 0x55bec82ce330: updated 1 properties
+[D][06912.793337] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82ce610: registered 1
+[D][06912.793341] pw.module    | [   impl-module.c:  251 pw_context_load_module()] 0x55bec82ce330: loaded module: libpipewire-module-rt
+[I][06912.793345] pw.conf      | [          conf.c:  610 load_module()] 0x55bec82c3ed0: loaded module libpipewire-module-rt
+[I][06912.793349] pw.module    | [   impl-module.c:  156 pw_context_load_module()] 0x55bec82c3ed0: name:libpipewire-module-protocol-native args:(null)
+[D][06912.793353] pw.module    | [   impl-module.c:  164 pw_context_load_module()] PIPEWIRE_MODULE_DIR set to: /data/hoangnguyen15/AGL/pipewire/builddir/src/modules
+[D][06912.793358] pw.module    | [   impl-module.c:  171 pw_context_load_module()] trying to load module: libpipewire-module-protocol-native (/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-protocol-native.so) args((null))
+[D][06912.793514] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82de170: new PipeWire:Interface:Module 2
+[D][06912.793522] pw.protocol  | [      protocol.c:   52 pw_protocol_new()] 0x55bec82de430: Created protocol PipeWire:Protocol:Native
+[D][06912.793527] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Core/4 to protocol PipeWire:Protocol:Native
+[D][06912.793531] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Registry/3 to protocol PipeWire:Protocol:Native
+[D][06912.793535] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Module/3 to protocol PipeWire:Protocol:Native
+[D][06912.793538] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Device/3 to protocol PipeWire:Protocol:Native
+[D][06912.793542] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Node/3 to protocol PipeWire:Protocol:Native
+[D][06912.793545] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Port/3 to protocol PipeWire:Protocol:Native
+[D][06912.793549] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Factory/3 to protocol PipeWire:Protocol:Native
+[D][06912.793553] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Client/3 to protocol PipeWire:Protocol:Native
+[D][06912.793556] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Link/3 to protocol PipeWire:Protocol:Native
+[D][06912.793559] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:SecurityContext/3 to protocol PipeWire:Protocol:Native
+[D][06912.793564] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Core/0 to protocol PipeWire:Protocol:Native
+[D][06912.793568] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Registry/0 to protocol PipeWire:Protocol:Native
+[D][06912.793571] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Module/0 to protocol PipeWire:Protocol:Native
+[D][06912.793575] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Node/0 to protocol PipeWire:Protocol:Native
+[D][06912.793580] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Port/0 to protocol PipeWire:Protocol:Native
+[D][06912.793584] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Factory/0 to protocol PipeWire:Protocol:Native
+[D][06912.793587] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Client/0 to protocol PipeWire:Protocol:Native
+[D][06912.793590] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Link/0 to protocol PipeWire:Protocol:Native
+[D][06912.793594] mod.protocol-native | [module-protocol-: 1814 pipewire__module_init()] 0x55bec82de430: new
+[D][06912.793599] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82df170: new PipeWire:Interface:SecurityContext 3
+[D][06912.793603] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82df170: registered 3
+[D][06912.793607] mod.protocol-native | [module-protocol-: 1432 create_server()] 0x55bec82de430: created server 0x55bec82df270
+[D][06912.793612] pw.module    | [   impl-module.c:  358 pw_impl_module_update_properties()] 0x55bec82de040: updated 3 properties
+[D][06912.793616] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82de170: registered 2
+[D][06912.793619] pw.module    | [   impl-module.c:  251 pw_context_load_module()] 0x55bec82de040: loaded module: libpipewire-module-protocol-native
+[I][06912.793623] pw.conf      | [          conf.c:  610 load_module()] 0x55bec82c3ed0: loaded module libpipewire-module-protocol-native
+[I][06912.793627] pw.module    | [   impl-module.c:  156 pw_context_load_module()] 0x55bec82c3ed0: name:libpipewire-module-client-node args:(null)
+[D][06912.793630] pw.module    | [   impl-module.c:  164 pw_context_load_module()] PIPEWIRE_MODULE_DIR set to: /data/hoangnguyen15/AGL/pipewire/builddir/src/modules
+[D][06912.793635] pw.module    | [   impl-module.c:  171 pw_context_load_module()] trying to load module: libpipewire-module-client-node (/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-client-node.so) args((null))
+[D][06912.793686] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82e0130: new PipeWire:Interface:Module 4
+[D][06912.793692] pw.factory   | [  impl-factory.c:   52 pw_context_create_factory()] 0x55bec82e04d0: new client-node
+[D][06912.793696] mod.client-node | [module-client-no:  183 pipewire__module_init()] module 0x55bec82dfef0: new
+[D][06912.793700] pw.context   | [       context.c: 1964 pw_context_register_export_type()] context 0x55bec82c3ed0: Add export type PipeWire:Interface:Node to context
+[D][06912.793704] pw.context   | [       context.c: 1964 pw_context_register_export_type()] context 0x55bec82c3ed0: Add export type Spa:Pointer:Interface:Node to context
+[D][06912.793709] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:ClientNode/6 to protocol PipeWire:Protocol:Native
+[D][06912.793714] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:ClientNode/0 to protocol PipeWire:Protocol:Native
+[D][06912.793718] pw.module    | [   impl-module.c:  358 pw_impl_module_update_properties()] 0x55bec82dfef0: updated 3 properties
+[D][06912.793722] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82e0130: registered 4
+[D][06912.793725] pw.factory   | [  impl-factory.c:  142 pw_impl_factory_update_properties()] 0x55bec82e04d0: updated 1 properties
+[D][06912.793729] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82e0a90: new PipeWire:Interface:Factory 5
+[D][06912.793734] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82e0a90: registered 5
+[D][06912.793738] pw.module    | [   impl-module.c:  251 pw_context_load_module()] 0x55bec82dfef0: loaded module: libpipewire-module-client-node
+[I][06912.793743] pw.conf      | [          conf.c:  610 load_module()] 0x55bec82c3ed0: loaded module libpipewire-module-client-node
+[I][06912.793747] pw.module    | [   impl-module.c:  156 pw_context_load_module()] 0x55bec82c3ed0: name:libpipewire-module-adapter args:(null)
+[D][06912.793750] pw.module    | [   impl-module.c:  164 pw_context_load_module()] PIPEWIRE_MODULE_DIR set to: /data/hoangnguyen15/AGL/pipewire/builddir/src/modules
+[D][06912.793754] pw.module    | [   impl-module.c:  171 pw_context_load_module()] trying to load module: libpipewire-module-adapter (/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-adapter.so) args((null))
+[I][06912.793781] mod.rt       | [     module-rt.c:  621 set_nice()] main thread nice level set to -11
+[D][06912.793787] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82e1750: new PipeWire:Interface:Module 6
+[D][06912.793788] mod.rt       | [     module-rt.c: 1002 do_rtkit_setup()] clamping rt.time.soft from 18446744073709551615 to 200000 because of RTKit
+[D][06912.793793] pw.factory   | [  impl-factory.c:   52 pw_context_create_factory()] 0x55bec82e1be0: new adapter
+[D][06912.793794] mod.rt       | [     module-rt.c:  639 set_rlimit()] rt.time.soft:200000 rt.time.hard:200000
+[D][06912.793798] mod.adapter  | [module-adapter.c:  365 pipewire__module_init()] module 0x55bec82e14e0: new
+[D][06912.793802] pw.module    | [   impl-module.c:  358 pw_impl_module_update_properties()] 0x55bec82e14e0: updated 3 properties
+[D][06912.793805] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82e1750: registered 6
+[D][06912.793809] pw.factory   | [  impl-factory.c:  142 pw_impl_factory_update_properties()] 0x55bec82e1be0: updated 1 properties
+[D][06912.793814] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82e2130: new PipeWire:Interface:Factory 7
+[D][06912.793818] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82e2130: registered 7
+[D][06912.793822] pw.module    | [   impl-module.c:  251 pw_context_load_module()] 0x55bec82e14e0: loaded module: libpipewire-module-adapter
+[I][06912.793825] pw.conf      | [          conf.c:  610 load_module()] 0x55bec82c3ed0: loaded module libpipewire-module-adapter
+[I][06912.793829] pw.module    | [   impl-module.c:  156 pw_context_load_module()] 0x55bec82c3ed0: name:libpipewire-module-metadata args:(null)
+[D][06912.793832] pw.module    | [   impl-module.c:  164 pw_context_load_module()] PIPEWIRE_MODULE_DIR set to: /data/hoangnguyen15/AGL/pipewire/builddir/src/modules
+[D][06912.793836] pw.module    | [   impl-module.c:  171 pw_context_load_module()] trying to load module: libpipewire-module-metadata (/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-metadata.so) args((null))
+[D][06912.793861] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82e2de0: new PipeWire:Interface:Module 8
+[D][06912.793868] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Metadata/3 to protocol PipeWire:Protocol:Native
+[D][06912.793872] pw.protocol  | [      protocol.c:  136 pw_protocol_add_marshal()] 0x55bec82de430: Add marshal PipeWire:Interface:Metadata/3 to protocol PipeWire:Protocol:Native
+[D][06912.793875] pw.factory   | [  impl-factory.c:   52 pw_context_create_factory()] 0x55bec82e32c0: new metadata
+[D][06912.793879] mod.metadata | [module-metadata.:  265 pipewire__module_init()] module 0x55bec82e2b70: new
+[D][06912.793883] pw.context   | [       context.c: 1964 pw_context_register_export_type()] context 0x55bec82c3ed0: Add export type PipeWire:Interface:Metadata to context
+[D][06912.793887] pw.module    | [   impl-module.c:  358 pw_impl_module_update_properties()] 0x55bec82e2b70: updated 3 properties
+[D][06912.793891] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82e2de0: registered 8
+[D][06912.793895] pw.factory   | [  impl-factory.c:  142 pw_impl_factory_update_properties()] 0x55bec82e32c0: updated 1 properties
+[D][06912.793898] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82e38f0: new PipeWire:Interface:Factory 9
+[D][06912.793904] pw.global    | [        global.c:  175 pw_global_register()] 0x55bec82e38f0: registered 9
+[D][06912.793907] pw.module    | [   impl-module.c:  251 pw_context_load_module()] 0x55bec82e2b70: loaded module: libpipewire-module-metadata
+[I][06912.793910] pw.conf      | [          conf.c:  610 load_module()] 0x55bec82c3ed0: loaded module libpipewire-module-metadata
+[I][06912.793915] pw.module    | [   impl-module.c:  156 pw_context_load_module()] 0x55bec82c3ed0: name:libpipewire-module-protocol-pulse args:{
+	    # contents of pulse.properties can also be placed here
+	    # to have config per server.
+        }
+[D][06912.793918] pw.module    | [   impl-module.c:  164 pw_context_load_module()] PIPEWIRE_MODULE_DIR set to: /data/hoangnguyen15/AGL/pipewire/builddir/src/modules
+[D][06912.793923] pw.module    | [   impl-module.c:  171 pw_context_load_module()] trying to load module: libpipewire-module-protocol-pulse (/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-protocol-pulse.so) args({
+	    # contents of pulse.properties can also be placed here
+	    # to have config per server.
+        })
+[D][06912.794551] pw.global    | [        global.c:   99 pw_global_new()] 0x55bec82f6340: new PipeWire:Interface:Module 10
+[D][06912.794562] mod.protocol-pulse | [module-protocol-:  453 pipewire__module_init()] module 0x55bec82f17d0: new {
+	    # contents of pulse.properties can also be placed here
+	    # to have config per server.
+        }
+[I][06912.794570] pw.context   | [       context.c:  718 pw_context_acquire_loop()] 0x55bec82c3ed0: looking for name:'(null)' class:'(null)'
+[D][06912.794576] pw.context   | [       context.c:  675 acquire_data_loop()] 0: name:'data-loop.0' class:'data.rt' score:1 ref:0
+[I][06912.794580] pw.context   | [       context.c:  284 data_loop_start()] starting data loop data-loop.0
+[D][06912.794607] pw.data-loop | [     data-loop.c:   61 do_loop()] 0x55bec82c9a60: enter thread
+[D][06912.794609] mod.rt       | [     module-rt.c:  839 impl_acquire_rt()] SCHED_OTHER|SCHED_RESET_ON_FORK worked.
+[D][06912.794621] mod.rt       | [     module-rt.c:  802 do_make_realtime()] rtkit realtime
+[I][06912.794628] mod.rt       | [     module-rt.c:  808 do_make_realtime()] clamping requested priority 83 for thread 163112 between 1  and 20
+[D][06912.794628] spa.system   | [        system.c:  203 impl_eventfd_create()] 0x55bec82c9b68: new fd:17
+[I][06912.794635] spa.loop     | [          loop.c:  215 loop_create_queue()] 0x55bec82c9c88 created queue 0x55bec82f6b20
+[I][06912.794639] pw.context   | [       context.c:  694 acquire_data_loop()] 0x55bec82c3ed0: using name:'data-loop.0' class:'data.rt' ref:1
+[I][06912.794642] mod.rt       | [     module-rt.c:  818 do_make_realtime()] acquired realtime priority 20 for thread 163112 using RTKit
+[I][06912.794644] pw.conf      | [          conf.c: 1110 pw_conf_section_for_each()] handle config '/data/hoangnguyen15/AGL/pipewire/builddir/src/daemon/pipewire-pulse.conf' section 'pulse.properties'
+[I][06912.794651] pw.conf      | [          conf.c: 1110 pw_conf_section_for_each()] handle config '/data/hoangnguyen15/AGL/pipewire/builddir/src/daemon/pipewire-pulse.conf' section 'pulse.properties.rules'
+[D][06912.794656] pw.conf      | [          conf.c:  716 find_match()] 'cpu.vm.name' fail '(null)' < > '!null'
+[D][06912.794666] mod.protocol-pulse | [        server.c:  901 server_new()] server 0x55bec82fef60: new
+[W][06912.794678] mod.protocol-pulse | [        server.c:  612 start_unix_server()] server 0x55bec82fef60: socket '/run/user/1009/pulse/native' is in use
+[W][06912.794685] mod.protocol-pulse | [        server.c: 1040 servers_create_and_start()] pulse-server 0x55bec82f65d0: failed to start server on 'unix:/run/user/1009/pulse/native': Address already in use
+[D][06912.794690] mod.protocol-pulse | [        server.c: 1067 server_free()] server 0x55bec82fef60: free
+[E][06912.794694] mod.protocol-pulse | [  pulse-server.c: 5535 pw_protocol_pulse_new()] 0x55bec82f65d0: no servers could be started: Address already in use
+[D][06912.794703] pw.module    | [   impl-module.c:  276 pw_context_load_module()] "/data/hoangnguyen15/AGL/pipewire/builddir/src/modules/libpipewire-module-protocol-pulse.so": failed to initialize: Address already in use
+[D][06912.794707] pw.module    | [   impl-module.c:  301 pw_impl_module_destroy()] 0x55bec82f61c0: destroy libpipewire-module-protocol-pulse
+[D][06912.794711] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82f6340: destroy 10
+[D][06912.794715] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82f6340: free
+[D][06912.794718] pw.module    | [   impl-module.c:  311 pw_impl_module_destroy()] 0x55bec82f61c0: free
+[E][06912.794751] pw.conf      | [          conf.c:  602 load_module()] 0x55bec82c3ed0: could not load mandatory module "libpipewire-module-protocol-pulse": Address already in use
+[D][06912.794757] pw.context   | [       context.c:  536 pw_context_destroy()] 0x55bec82c3ed0: destroy
+[D][06912.794760] pw.data-loop | [     data-loop.c:  275 pw_data_loop_stop()] 0x55bec82c9a60 stopping
+[D][06912.794764] pw.data-loop | [     data-loop.c:  282 pw_data_loop_stop()] 0x55bec82c9a60 signal
+[D][06912.794768] pw.data-loop | [     data-loop.c:  285 pw_data_loop_stop()] 0x55bec82c9a60 join
+[D][06912.794770] pw.data-loop | [     data-loop.c:   83 do_stop()] 0x55bec82c9a60: stopping
+[D][06912.794776] pw.data-loop | [     data-loop.c:   47 thread_cleanup()] 0x55bec82c9a60: leave thread
+[D][06912.794786] pw.data-loop | [     data-loop.c:  289 pw_data_loop_stop()] 0x55bec82c9a60 joined
+[D][06912.794790] pw.data-loop | [     data-loop.c:  291 pw_data_loop_stop()] 0x55bec82c9a60 stopped
+[D][06912.794793] pw.module    | [   impl-module.c:  301 pw_impl_module_destroy()] 0x55bec82e2b70: destroy libpipewire-module-metadata
+[D][06912.794797] pw.factory   | [  impl-factory.c:   65 pw_impl_factory_destroy()] 0x55bec82e32c0: destroy
+[D][06912.794801] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82e38f0: destroy 9
+[D][06912.794804] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82e38f0: unregistered 9
+[D][06912.794808] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82e38f0: free
+[D][06912.794811] pw.factory   | [  impl-factory.c:   77 pw_impl_factory_destroy()] 0x55bec82e32c0: free
+[D][06912.794815] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82e2de0: destroy 8
+[D][06912.794818] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82e2de0: unregistered 8
+[D][06912.794821] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82e2de0: free
+[D][06912.794824] pw.module    | [   impl-module.c:  311 pw_impl_module_destroy()] 0x55bec82e2b70: free
+[D][06912.794835] pw.module    | [   impl-module.c:  301 pw_impl_module_destroy()] 0x55bec82e14e0: destroy libpipewire-module-adapter
+[D][06912.794838] mod.adapter  | [module-adapter.c:  307 module_destroy()] 0x55bec82e1c98: destroy
+[D][06912.794842] pw.factory   | [  impl-factory.c:   65 pw_impl_factory_destroy()] 0x55bec82e1be0: destroy
+[D][06912.794845] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82e2130: destroy 7
+[D][06912.794848] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82e2130: unregistered 7
+[D][06912.794851] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82e2130: free
+[D][06912.794855] pw.factory   | [  impl-factory.c:   77 pw_impl_factory_destroy()] 0x55bec82e1be0: free
+[D][06912.794858] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82e1750: destroy 6
+[D][06912.794861] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82e1750: unregistered 6
+[D][06912.794864] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82e1750: free
+[D][06912.794868] pw.module    | [   impl-module.c:  311 pw_impl_module_destroy()] 0x55bec82e14e0: free
+[D][06912.794878] pw.module    | [   impl-module.c:  301 pw_impl_module_destroy()] 0x55bec82dfef0: destroy libpipewire-module-client-node
+[D][06912.794882] pw.factory   | [  impl-factory.c:   65 pw_impl_factory_destroy()] 0x55bec82e04d0: destroy
+[D][06912.794886] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82e0a90: destroy 5
+[D][06912.794889] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82e0a90: unregistered 5
+[D][06912.794893] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82e0a90: free
+[D][06912.794896] pw.factory   | [  impl-factory.c:   77 pw_impl_factory_destroy()] 0x55bec82e04d0: free
+[D][06912.794899] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82e0130: destroy 4
+[D][06912.794903] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82e0130: unregistered 4
+[D][06912.794906] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82e0130: free
+[D][06912.794909] pw.module    | [   impl-module.c:  311 pw_impl_module_destroy()] 0x55bec82dfef0: free
+[D][06912.794920] pw.module    | [   impl-module.c:  301 pw_impl_module_destroy()] 0x55bec82de040: destroy libpipewire-module-protocol-native
+[D][06912.794925] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82df170: destroy 3
+[D][06912.794928] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82df170: unregistered 3
+[D][06912.794931] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82df170: free
+[D][06912.794935] pw.protocol  | [      protocol.c:   91 pw_protocol_destroy()] 0x55bec82de430: destroy
+[D][06912.794938] mod.protocol-native | [module-protocol-: 1352 destroy_server()] 0x55bec82de430: server 0x55bec82df270
+[D][06912.794943] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82de170: destroy 2
+[D][06912.794946] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82de170: unregistered 2
+[D][06912.794949] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82de170: free
+[D][06912.794952] pw.module    | [   impl-module.c:  311 pw_impl_module_destroy()] 0x55bec82de040: free
+[D][06912.794963] pw.module    | [   impl-module.c:  301 pw_impl_module_destroy()] 0x55bec82ce330: destroy libpipewire-module-rt
+[D][06912.794967] pw.thread-loop | [   thread-loop.c:  350 pw_thread_loop_stop()] 0x55bec82d2b10 stopping 1
+[D][06912.794971] pw.thread-loop | [   thread-loop.c:  352 pw_thread_loop_stop()] 0x55bec82d2b10 signal
+[D][06912.794975] pw.thread-loop | [   thread-loop.c:  354 pw_thread_loop_stop()] 0x55bec82d2b10 join
+[D][06912.794977] pw.thread-loop | [   thread-loop.c:  119 do_stop()] stopping
+[D][06912.794981] pw.thread-loop | [   thread-loop.c:  301 do_loop()] 0x55bec82d2b10: leave thread
+[D][06912.794991] pw.thread-loop | [   thread-loop.c:  356 pw_thread_loop_stop()] 0x55bec82d2b10 joined
+[D][06912.794995] pw.thread-loop | [   thread-loop.c:  359 pw_thread_loop_stop()] 0x55bec82d2b10 stopped
+[D][06912.795000] spa.system   | [        system.c:   69 impl_close()] 0x55bec82d2d18: close fd:15
+[D][06912.795004] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.loop'
+[D][06912.795008] spa.system   | [        system.c:   69 impl_close()] 0x55bec82d2d18: close fd:14
+[D][06912.795012] spa.system   | [        system.c:   69 impl_close()] 0x55bec82d2d18: close fd:16
+[D][06912.795016] spa.system   | [        system.c:   69 impl_close()] 0x55bec82d2d18: close fd:13
+[D][06912.795019] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.system'
+[D][06912.795027] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82ce610: destroy 1
+[D][06912.795031] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82ce610: unregistered 1
+[D][06912.795034] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82ce610: free
+[D][06912.795037] pw.module    | [   impl-module.c:  311 pw_impl_module_destroy()] 0x55bec82ce330: free
+[D][06912.795046] pw.global    | [        global.c:  407 pw_global_destroy()] 0x55bec82cb230: destroy 0
+[D][06912.795050] pw.core      | [     impl-core.c:  444 pw_impl_core_destroy()] 0x55bec82cb090: destroy
+[D][06912.795053] pw.core      | [     impl-core.c:  456 pw_impl_core_destroy()] 0x55bec82cb090: free
+[D][06912.795058] pw.global    | [        global.c:  200 global_unregister()] 0x55bec82cb230: unregistered 0
+[D][06912.795061] pw.global    | [        global.c:  415 pw_global_destroy()] 0x55bec82cb230: free
+[D][06912.795064] pw.context   | [       context.c:  569 pw_context_destroy()] 0x55bec82c3ed0: free
+[D][06912.795068] pw.data-loop | [     data-loop.c:  163 pw_data_loop_destroy()] 0x55bec82c9a60: destroy
+[D][06912.795071] pw.data-loop | [     data-loop.c:  275 pw_data_loop_stop()] 0x55bec82c9a60 stopping
+[D][06912.795075] pw.data-loop | [     data-loop.c:  291 pw_data_loop_stop()] 0x55bec82c9a60 stopped
+[D][06912.795078] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.loop'
+[D][06912.795083] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c9b68: close fd:10
+[D][06912.795086] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c9b68: close fd:17
+[D][06912.795090] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c9b68: close fd:9
+[D][06912.795093] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.system'
+[D][06912.795097] pw.mem       | [           mem.c:  196 pw_mempool_destroy()] 0x55bec82c9ef0: destroy
+[D][06912.795101] pw.mem       | [           mem.c:  184 pw_mempool_clear()] 0x55bec82c9ef0: clear
+[D][06912.795104] pw.work-queue | [    work-queue.c:  117 pw_work_queue_destroy()] 0x55bec82c9f50: destroy
+[D][06912.795109] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c3928: close fd:11
+[D][06912.795113] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.dbus'
+[D][06912.795117] pw.context   | [      pipewire.c:  155 unref_plugin()] unloaded plugin:'/data/hoangnguyen15/AGL/pipewire/builddir/spa/plugins/support/libspa-dbus.so'
+[E][06912.795131] default      | [      pipewire.c:  124 main()] failed to create context: Address already in use
+[D][06912.795137] pw.main-loop | [     main-loop.c:   74 pw_main_loop_destroy()] 0x55bec82c37d0: destroy
+[D][06912.795140] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.loop'
+[D][06912.795144] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c3928: close fd:8
+[D][06912.795148] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c3928: close fd:7
+[D][06912.795152] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c3928: close fd:6
+[D][06912.795155] spa.system   | [        system.c:   69 impl_close()] 0x55bec82c3928: close fd:5
+[D][06912.795159] pw.context   | [      pipewire.c:  194 unref_handle()] clear handle 'support.system'
